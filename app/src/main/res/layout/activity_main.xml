@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🤖 Voice AI Assistant"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="24dp" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/voice_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="🎤\nTap to Speak"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✅ Ready"
+        android:textSize="16sp"
+        android:textColor="@color/status_color"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/response_background"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting for voice input..."
+            android:textSize="14sp"
+            android:textColor="@color/response_text" />
+
+    </ScrollView>
+
+</LinearLayout>
